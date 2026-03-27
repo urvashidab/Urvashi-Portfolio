@@ -1,6 +1,29 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Poppins", sans-serif;
+  --color-primaryBg: #f8f7f4;
+  --color-primaryText: #1a1a1a;
+  --color-darkBg: #0a0a0a;
+  --color-darkText: #d4d4d4;
+}
+
+@layer base {
+  body {
+    @apply bg-primaryBg text-primaryText dark:bg-darkBg dark:text-darkText;
+  }
+}
+
+a.active hr {
+  display: block;
+}
+
+/* navbar-- hover links */
+@layer components {
+  .link-line {
+    @apply w-2/4 border-none h-[1.5px] bg-gray-600 dark:bg-gray-300 hidden;
+  }
 }
