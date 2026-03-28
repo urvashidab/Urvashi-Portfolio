@@ -13,12 +13,12 @@ const Navbar = () => {
 
   const handleMenu = () => setMenu((prev) => !prev);
 
-  function toggleTheme() {
-    return setIsDark((prev) => !prev);
-  }
+  const toggleTheme = () => {
+    setIsDark((prev) => !prev);
+  };
 
   return (
-    <nav className="flex justify-between items-center py-5 font-medium">
+    <nav className="flex justify-between items-center py-5 font-medium tracking-wide">
       {/* left hand side */}
       <Link to="/">
         <p className="font-bold">URVASHI</p>
@@ -27,28 +27,42 @@ const Navbar = () => {
       {/* middle part list */}
 
       <ul className="lg:flex justify-center text-sm  gap-6 hidden  ">
-        <NavLink to="/about" className="flex flex-col items-center gap-1">
-          <p className="hover:text-gray-500 dark:hover:text-[#f1e1b9]">ABOUT</p>
-
+        <NavLink
+          to="/about"
+          className="flex flex-col items-center gap-1  group"
+        >
+          <p className="nav-link">ABOUT</p>
           <hr className="link-line" />
         </NavLink>
 
-        <NavLink to="/skills" className="flex flex-col items-center gap-1">
-          <p>SKILLS</p>
+        <NavLink
+          to="/skills"
+          className="flex flex-col items-center gap-1 group"
+        >
+          <p className="nav-link">SKILLS</p>
           <hr className="link-line"></hr>
         </NavLink>
 
-        <NavLink to="/experience" className="flex flex-col items-center gap-1">
-          <p>EXPERIENCE</p>
+        <NavLink
+          to="/experience"
+          className="flex flex-col items-center gap-1 group"
+        >
+          <p className="nav-link">EXPERIENCE</p>
           <hr className="link-line"></hr>
         </NavLink>
 
-        <NavLink to="/projects" className="flex flex-col items-center gap-1">
-          <p>PROJECTS</p>
+        <NavLink
+          to="/projects"
+          className="flex flex-col items-center gap-1 group"
+        >
+          <p className="nav-link">PROJECTS</p>
           <hr className="link-line"></hr>
         </NavLink>
-        <NavLink to="/contact" className="flex flex-col items-center gap-1">
-          <p>LET'S TALK</p>
+        <NavLink
+          to="/contact"
+          className="flex flex-col items-center gap-1 group"
+        >
+          <p className="nav-link">LET'S TALK</p>
           <hr className="link-line"></hr>
         </NavLink>
       </ul>

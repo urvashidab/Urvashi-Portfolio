@@ -10,20 +10,26 @@
   --color-darkBg: #0a0a0a;
   --color-darkText: #d4d4d4;
 }
-
 @layer base {
   body {
-    @apply bg-primaryBg text-primaryText dark:bg-darkBg dark:text-darkText;
+    @apply font-sans bg-primaryBg text-primaryText dark:bg-darkBg dark:text-darkText antialiased;
   }
-}
-
-a.active hr {
-  display: block;
+  p {
+    @apply leading-relaxed;
+  }
 }
 
 /* navbar-- hover links */
 @layer components {
   .link-line {
-    @apply w-2/4 border-none h-[1.5px] bg-gray-600 dark:bg-gray-300 hidden;
+    @apply w-0 mx-auto h-[1.5px] bg-gray-600 dark:bg-gray-300 transition-all duration-300 group-hover:w-1/2;
+  }
+
+  a.active .link-line {
+    width: 50%;
+  }
+
+  .nav-link {
+    @apply hover:text-gray-500 dark:hover:text-[#f1e1b9] transition-colors duration-200;
   }
 }
