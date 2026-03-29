@@ -4,7 +4,7 @@ import skillsData from "../skillsData";
 const Skills = () => {
   return (
     <>
-      <h1 className="text-3xl tracking-[0.25em] font-light py-10">SKILLS</h1>
+      <h1 className="heading-section py-10">SKILLS</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {skillsData.map((item) => (

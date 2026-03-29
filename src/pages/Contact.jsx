@@ -10,7 +10,7 @@ const Contact = () => {
       {/* left side */}
 
       <div className="flex flex-col gap-8">
-        <h2 className="text-3xl tracking-[0.25em] font-light">CONTACT</h2>
+        <h2 className="heading-section">CONTACT</h2>
 
         <p className=" max-w-md text-gray-600 dark:text-gray-400">
           Let’s create something meaningful together. I’d love to hear about

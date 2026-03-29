@@ -19,6 +19,12 @@
   }
 }
 
+/* heading for sections */
+
+.heading-section {
+  @apply text-3xl tracking-[0.25em] font-light;
+}
+
 /* navbar-- hover links */
 @layer components {
   .link-line {
