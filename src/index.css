@@ -39,5 +39,5 @@
 }
 
 .input-form {
-  @apply border-b border-gray-300 focus:border-primaryText dark:focus:border-[#f1e1b9] py-3 outline-none placeholder:text-gray-400;
+  @apply w-full border-b border-gray-300 dark:border-gray-600 focus:border-primaryText dark:focus:border-[#f1e1b9] py-3 outline-none placeholder:text-gray-400 dark:placeholder:text-gray-500 bg-transparent;
 }

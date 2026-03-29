@@ -86,7 +86,7 @@ const Navbar = () => {
       </button>
 
       {menu && (
-        <ul className="flex flex-col gap-6 md:gap-12 fixed top-20 right-0  w-1/2  h-screen  md:text-2xl shadow-lg p-10 lg:hidden">
+        <ul className="flex flex-col gap-6 md:gap-12 fixed top-20 right-0  w-1/2  h-screen bg-primaryBg dark:bg-darkBg md:text-2xl shadow-lg p-10 lg:hidden">
           <NavLink to="/about" onClick={handleMenu}>
             ABOUT
           </NavLink>

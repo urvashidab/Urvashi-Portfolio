@@ -6,7 +6,7 @@ import { FaGithub, FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-16">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-12">
       {/* left side */}
 
       <div className="flex flex-col gap-8">
