@@ -20,7 +20,7 @@ const Footer = () => {
         {/* right — social icons */}
         <div className="flex gap-6 text-base text-gray-500 dark:text-gray-400">
           <a
-            href="https://github.com/yourname"
+            href="https://github.com/urvashidab"
             target="_blank"
             rel="noreferrer"
             className="hover:text-primaryText dark:hover:text-darkText transition"
