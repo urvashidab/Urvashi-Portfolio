@@ -16,19 +16,18 @@ const Skills = () => {
               {item.section}
             </h2>
 
-            {/* icons */}
             <div className="grid grid-cols-3 gap-6 mt-4">
-              {item.skills.map((skill, i) => {
+              {item.skills.map((skill) => {
                 const Icon = skill.icon;
 
                 return (
                   <div
-                    key={i}
+                    key={skill.name}
                     className="group flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
                   >
                     <Icon className={`text-4xl ${skill.hoverColor}`} />
 
-                    <span className="font-medium text-sm group-hover:text-gray-500 dark:group-hover:text-[#f1e1b9] transition ">
+                    <span className="font-medium text-sm group-hover:text-gray-500 dark:group-hover:text-[#f1e1b9] transition">
                       {skill.name}
                     </span>
                   </div>
