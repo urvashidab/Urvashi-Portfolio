@@ -32,4 +32,12 @@
   .nav-link {
     @apply hover:text-gray-500 dark:hover:text-[#f1e1b9] transition-colors duration-200;
   }
+
+  .social-btns {
+    @apply cursor-pointer hover:text-gray-500 dark:hover:text-[#f1e1b9] transition;
+  }
+}
+
+.input-form {
+  @apply border-b border-gray-300 focus:border-primaryText dark:focus:border-[#f1e1b9] py-3 outline-none placeholder:text-gray-400;
 }
