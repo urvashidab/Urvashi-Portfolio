@@ -13,7 +13,7 @@ const Footer = () => {
         </p>
 
         {/* center — tagline */}
-        <p className="text-xs tracking-[0.2em] uppercase text-gray-500 dark:text-gray-400 italic">
+        <p className="text-xs tracking-[0.2em] uppercase text-gray-500 dark:text-gray-400 ">
           Built by a human, not AI. Probably.
         </p>
 
