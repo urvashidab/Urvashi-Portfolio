@@ -114,10 +114,7 @@ const Contact = () => {
 
           {/* submit button */}
 
-          <button
-            type="submit"
-            className="w-fit border px-10 py-3 mt-4 tracking-widest text-sm cursor-pointer hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-200"
-          >
+          <button type="submit" className="w-fit mt-4 btn ">
             SUBMIT
           </button>
         </form>

@@ -1,54 +1,45 @@
 import React from "react";
-import { images } from "../skillsData";
+
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center grayscale opacity-20"
-        style={{
-          backgroundImage: `url(${images.urvashi_hero})`,
-        }}
-      ></div>
-
-      {/* Light overlay (improves readability) */}
-      <div className="absolute inset-0 bg-primaryBg/70  dark:bg-darkBg/80"></div>
-
-      {/* Hero content */}
-      <div className="relative max-w-2xl text-center">
-        {/* Name */}
+    <section className=" flex items-center justify-center  min-h-[65vh]">
+      <div className=" max-w-2xl text-center ">
+        {/* name */}
         <h1 className="text-5xl md:text-6xl font-light tracking-wide">
           Hi, I'm Urvashi
         </h1>
 
-        {/* Role */}
+        {/* role */}
         <h2 className="text-2xl mt-4 text-gray-600 dark:text-gray-300">
           Full-Stack Developer
         </h2>
+        <hr className="w-12 mx-auto mt-6 border-gray-400 dark:border-gray-600" />
 
-        {/* Description */}
-        <p className="mt-6 text-lg leading-relaxed">
+        {/* some description */}
+        <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
           I build clean, practical web applications that solve real-world
           problems using the MERN stack. I enjoy turning ideas into simple,
           thoughtful digital experiences.
         </p>
 
-        {/* Buttons */}
+        {/* links */}
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
           <a
-            href="#projects"
-            className="px-6 py-2 border border-gray-400 dark:border-gray-500 hover:border-primaryText dark:hover:border-[#f1e1b9] transition"
+            href="/resume.pdf"
+            download="Urvashi_Resume.pdf"
+            className="btn uppercase bg-primaryText text-primaryBg dark:bg-darkText dark:text-darkBg hover:opacity-70"
           >
-            View Projects
+            resume
           </a>
+          <Link to="/projects">
+            <button className="btn uppercase">View Projects</button>
+          </Link>
 
-          <a
-            href="#contact"
-            className="px-6 py-2 border border-gray-400 dark:border-gray-500 hover:border-primaryText dark:hover:border-[#f1e1b9] transition"
-          >
-            Contact Me
-          </a>
+          <Link to="/contact">
+            <button className="btn uppercase">Contact me</button>
+          </Link>
         </div>
       </div>
     </section>

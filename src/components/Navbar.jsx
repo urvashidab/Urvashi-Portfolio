@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center py-5 font-medium tracking-wide">
+    <nav className="flex justify-between items-center py-5 font-medium tracking-wide bg-primaryBg dark:bg-darkBg">
       {/* left hand side */}
       <Link to="/">
         <p className="font-bold">URVASHI</p>

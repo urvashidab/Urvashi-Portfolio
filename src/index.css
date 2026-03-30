@@ -19,6 +19,23 @@
   }
 }
 
+/* main button */
+.btn {
+  @apply border px-10 py-3 tracking-widest text-sm cursor-pointer 
+  hover:bg-primaryText hover:text-primaryBg 
+  dark:hover:bg-darkText dark:hover:text-darkBg 
+  transition-all duration-200 ease-out;
+}
+
+/* homepage- buttons project,contact and resume */
+
+/* .homepage-btn {
+  @apply border px-8 py-3 text-sm tracking-widest cursor-pointer
+  bg-primaryText text-primaryBg 
+  dark:bg-darkText dark:text-darkBg 
+  uppercase;
+} */
+
 /* heading for sections */
 
 .heading-section {
