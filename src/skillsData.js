@@ -22,11 +22,15 @@ import {
 import cycle from "../src/assets/images/cycle.jpg";
 import cooking from "../src/assets/images/cooking.jpg";
 import reading from "../src/assets/images/reading.jpg";
+import hero from "../src/assets/images/hero.jpg";
+import urvashi_hero from "../src/assets/images/urvashi.jpg";
 
 export const images = {
   cycle,
   cooking,
   reading,
+  urvashi_hero,
+  hero,
 };
 
 export const skillsData = [
