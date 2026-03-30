@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className=" flex items-center justify-center  min-h-[65vh]">
+    <section className=" flex items-center justify-center min-h-[65vh]">
       <div className=" max-w-2xl text-center ">
         {/* name */}
         <h1 className="text-5xl md:text-6xl font-light tracking-wide">
@@ -26,13 +26,6 @@ const Home = () => {
 
         {/* links */}
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
-          <a
-            href="/resume.pdf"
-            download="Urvashi_Resume.pdf"
-            className="btn uppercase bg-primaryText text-primaryBg dark:bg-darkText dark:text-darkBg hover:opacity-70"
-          >
-            resume
-          </a>
           <Link to="/projects">
             <button className="btn uppercase">View Projects</button>
           </Link>
@@ -40,6 +33,13 @@ const Home = () => {
           <Link to="/contact">
             <button className="btn uppercase">Contact me</button>
           </Link>
+          <a
+            href="/resume.pdf"
+            download="Urvashi_Resume.pdf"
+            className="btn uppercase bg-primaryText text-primaryBg dark:bg-darkText dark:text-darkBg hover:opacity-70"
+          >
+            resume
+          </a>
         </div>
       </div>
     </section>
