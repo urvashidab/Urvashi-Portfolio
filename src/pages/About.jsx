@@ -13,17 +13,17 @@ const About = () => {
           <img
             src={images.cooking}
             alt="cooking"
-            className="w-56 h-72 object-cover grayscale hover:grayscale-0  hover:shadow-lg hover:-rotate-3 transition-all duration-500 -rotate-2 ease-out"
+            className="w-56 h-72 object-cover grayscale hover:grayscale-0  hover:shadow-lg dark:hover:shadow-gray-700 hover:-rotate-3 transition-all duration-500 ease-out -rotate-2"
           />
           <img
             src={images.reading}
             alt="reading"
-            className="w-56 h-72 object-cover grayscale hover:grayscale-0 hover:shadow-lg transition-all duration-500 rotate-1 mb-6 hover:-rotate-2 ease-out"
+            className="w-56 h-72 object-cover grayscale hover:grayscale-0 hover:shadow-lg dark:hover:shadow-gray-700 transition-all duration-500 ease-out rotate-1 mb-6 hover:-rotate-2"
           />
           <img
             src={images.cycle}
             alt="cycling"
-            className="w-56 h-72 object-cover grayscale hover:grayscale-0 hover:shadow-lg transition-all duration-500 -rotate-1 hover:rotate-1 ease-out"
+            className="w-56 h-72 object-cover grayscale hover:grayscale-0 hover:shadow-lg dark:hover:shadow-gray-700 transition-all duration-500 ease-out -rotate-1 hover:rotate-1 "
           />
         </div>
         {/* -------- */}
