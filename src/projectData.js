@@ -1,10 +1,11 @@
+import img from "../src/assets/images/urvashi.jpg";
 const projectData = [
   {
     id: 1,
     title: "AI Frontend Project",
     description:
       "Modern AI interface built using React and Tailwind with API integration.",
-    image: "../src/assets/images/urvashi.jpg",
+    image: img,
     techStack: ["React", "Tailwind", "REST API", "JavaScript"],
     liveLink: "https://agencyfrontend.vercel.app/",
     githubLink: "https://github.com/urvashidab/Agency_AI_frontend",
