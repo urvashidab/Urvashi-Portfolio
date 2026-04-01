@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="group border border-primaryText/20 dark:border-darkText/20 p-6 bg-transparent transition-all duration-300 hover:shadow-xl dark:hover:shadow-[0_0_30px_rgba(255,255,255,0.03)] ">
+    <div className="group border border-primaryText/20 dark:border-darkText/20 p-6 bg-transparent  hover:shadow-xl dark:hover:shadow-[#21212187] transition-all duration-300 ">
       {/* image */}
       <div className="overflow-hidden mb-6 aspect-video">
         <img

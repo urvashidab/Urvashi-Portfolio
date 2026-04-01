@@ -10,7 +10,7 @@ const Skills = () => {
         {skillsData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col gap-6 border py-8 px-4 border-gray-300 dark:border-gray-600 hover:shadow-md dark:hover:shadow-gray-800 transition"
+            className="flex flex-col gap-6 border py-8 px-4 border-primaryText/20 dark:border-darkText/20 hover:shadow-xl dark:hover:shadow-[#21212187] transition-all duration-300"
           >
             <h2 className="uppercase text-center text-lg font-light tracking-[0.25em]">
               {item.section}
@@ -23,11 +23,11 @@ const Skills = () => {
                 return (
                   <div
                     key={skill.name}
-                    className="group flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
+                    className=" flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
                   >
-                    <Icon className={`text-4xl ${skill.hoverColor}`} />
+                    <Icon className={`text-3xl ${skill.hoverColor}`} />
 
-                    <span className="font-medium text-sm group-hover:text-gray-500 dark:group-hover:text-[#f1e1b9] transition">
+                    <span className="text-sm  uppercase tracking-widest opacity-80">
                       {skill.name}
                     </span>
                   </div>
