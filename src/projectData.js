@@ -1,4 +1,5 @@
 import ai_project from "../src/assets/images/ AI_Project.png";
+import book_project from "../src/assets/images/BookVault.png";
 const projectData = [
   {
     id: 1,
@@ -16,7 +17,7 @@ const projectData = [
     title: "Book Vault",
     description:
       "Book Store application with CRUD operations, REST APIs, MongoDB integration, and responsive UI with dark mode support deployment on Vercel.",
-    image: "../src/assets/images/BookVault.png",
+    image: book_project,
     techStack: [
       "React",
       "Tailwind",
